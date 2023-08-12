@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_character"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"/>
+
+    <TextView
+        android:id="@+id/txt_character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Character_Name"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/img_character"
+        app:layout_constraintStart_toStartOf="@id/img_character"
+        app:layout_constraintTop_toBottomOf="@id/img_character" />
+
+    <TextView
+        android:id="@+id/txt_species_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Species:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@id/txt_character_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_character_name" />
+
+    <TextView
+        android:id="@+id/txt_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Aline"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_character_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_character_name" />
+
+    <TextView
+        android:id="@+id/txt_status_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Status:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_species_type"
+        app:layout_constraintStart_toStartOf="@id/txt_species_type"
+        app:layout_constraintTop_toBottomOf="@id/txt_species_type" />
+
+    <TextView
+        android:id="@+id/txt_gender_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gender:"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_status_type"
+        app:layout_constraintStart_toStartOf="@id/txt_status_type"
+        app:layout_constraintTop_toBottomOf="@id/txt_status_type" />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alive"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_status_type"
+        app:layout_constraintEnd_toEndOf="@id/txt_species"
+        app:layout_constraintStart_toStartOf="@id/txt_species"
+        app:layout_constraintTop_toTopOf="@id/txt_status_type" />
+
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_gender_type"
+        app:layout_constraintEnd_toEndOf="@id/txt_status"
+        app:layout_constraintStart_toStartOf="@id/txt_status"
+        app:layout_constraintTop_toTopOf="@id/txt_gender_type" />
+</androidx.constraintlayout.widget.ConstraintLayout>
